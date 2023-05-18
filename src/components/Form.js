@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import styles from '../css/Adress.module.css';
+import imageClose from '../imgs/close.png';
 
 const AddressForm = () => {
   const [cep, setCep] = useState('');
@@ -32,6 +33,8 @@ const AddressForm = () => {
       <h1>Consulte um CEP</h1>
       <h6>Precisa saber o logradouro de algum CEP específico? Basta consultar o endereço abaixo!</h6>
       <br/><br/>
+
+      
       
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -44,6 +47,8 @@ const AddressForm = () => {
           </div>
         </div>
       </form>
+
+      <br/><br/><img className="iconeFechar" src={imageClose} width="30" height="30"/> <br/>
 
       {addressData && (
         <div className="endereco">

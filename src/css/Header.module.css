@@ -11,7 +11,12 @@ a{
 
 .navbar{
     width: 100%;
-    background-color: #997af1;
+    background-color: #526884;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
 }
 
 .title{
