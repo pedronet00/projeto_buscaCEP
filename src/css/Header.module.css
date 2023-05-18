@@ -11,35 +11,39 @@ a{
 
 .navbar{
     width: 100%;
-    background-color: black;
+    background-color: #997af1;
 }
 
-.h1{
+.title{
     color: white;
     text-align: left;
-    margin-right: 36em;
+    margin-left: 1em;
     padding: 0.1em;
 }
 
 .lista{
     display: flex;
+    margin: auto;
 }
 
 .li{
-    color: white;
-    padding: 0.05em;
-    margin-right: 0.2em;
+    color: black;
+    margin-right: 21.5em;
     font-weight: bold;
+    z-index: 1000;
 }
 
-h1 {
-    transition: transform 0.3s ease-in-out;
+.li:hover{
+    background-color: #997af1;
+    color: white;
+    padding: 3%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
   
-
 h1:hover {
-    transform: scale(1.1);
-    color: white;
+    transform: scale(1.04);
+    transition: transform 0.3s ease-in-out;
 }
 
   
